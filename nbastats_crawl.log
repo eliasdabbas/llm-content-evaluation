@@ -1,0 +1,180 @@
+2024-06-22 01:08:43 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: scrapybot)
+2024-06-22 01:08:43 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.7, Platform macOS-14.0-x86_64-i386-64bit
+2024-06-22 01:08:44 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-06-22 01:08:44 [py.warnings] WARNING: /Users/me/venv312/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-06-22 01:08:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-06-22 01:08:44 [scrapy.extensions.telnet] INFO: Telnet Password: 6f4c1f1b2fcbaef2
+2024-06-22 01:08:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-22 01:08:44 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'nbastats_crawl.log',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'USER_AGENT': 'advertools/0.14.2'}
+2024-06-22 01:08:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-22 01:08:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-22 01:08:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-06-22 01:08:45 [scrapy.core.engine] INFO: Spider opened
+2024-06-22 01:08:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-22 01:08:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2024-06-22 01:08:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/robots.txt> (referer: None)
+2024-06-22 01:08:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/John_Niemiera> (referer: None)
+2024-06-22 01:08:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/John_Niemiera>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Maceo_Baston> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Maceo_Baston>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Marko_Jaric> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Elijah_Hughes> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Lou_Tsioropoulos> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Jeremy_Sochan> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Marko_Jaric>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Zeke_Sinicola> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Dan_Kraus> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Elijah_Hughes>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Lou_Tsioropoulos>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Jeremy_Sochan>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Zeke_Sinicola>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Glen_Davis> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Rick_Robey> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Dan_Kraus>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Rod_Strickland> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Brian_Oliver> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Glen_Davis>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Corey_Brewer> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Rick_Robey>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Kirk_Penney> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Russell_Lee> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Johnny_Taylor> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Rod_Strickland>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Brian_Oliver>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Jaren_Jackson_Jr.> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Corey_Brewer>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Larry_Sanders> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Kirk_Penney>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Russell_Lee>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Johnny_Taylor>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Josh_Hall> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Dallas_Comegys> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Jaren_Jackson_Jr.>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Ken_Murray> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Larry_Sanders>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Josh_Hall>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Trevor_Wilson> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Scott_Haffner> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Noel_Felix> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Dallas_Comegys>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Blaine_Denning> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Ken_Murray>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Dick_Wehr> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Trevor_Wilson>
+2024-06-22 01:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Scott_Haffner>
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Mike_Higgins> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Julius_Nwosu> (referer: None)
+2024-06-22 01:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/John_Battle> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Noel_Felix>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Blaine_Denning>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Dick_Wehr>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Mike_Higgins>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Julius_Nwosu>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Marvin_Webster> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/John_Battle>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Matt_Mooney> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Dick_Murphy> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Marvin_Webster>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Howard_Nathan> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Raymond_Felton> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Matt_Mooney>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Herschel_Baltimore> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Priest_Lauderdale> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Dick_Murphy>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Howard_Nathan>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Raymond_Felton>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Chris_Wilcox> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Antoine_Walker> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Luke_Ridnour> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Herschel_Baltimore>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Tom_Hovasse> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Priest_Lauderdale>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Don_Buse> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Marcus_Thornton> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Chris_Wilcox>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Antoine_Walker>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Luke_Ridnour>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Tom_Hovasse>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Ron_Bonham> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Don_Buse>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Dragan_Tarlac> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Marcus_Thornton>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Brandin_Knight> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Jeff_Sanders> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Ron_Bonham>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Dragan_Tarlac>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Al_Jackson> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Jack_Rocker> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Brandin_Knight>
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Don_Hanrahan> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nbastats.pro/player/Zylan_Cheatham> (referer: None)
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Jeff_Sanders>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Al_Jackson>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Jack_Rocker>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Don_Hanrahan>
+2024-06-22 01:08:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nbastats.pro/player/Zylan_Cheatham>
+2024-06-22 01:08:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-06-22 01:08:47 [scrapy.extensions.feedexport] INFO: Stored jl feed (50 items) in: nbastats_crawl.jl
+2024-06-22 01:08:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 11125,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 465718,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'elapsed_time_seconds': 2.820579,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 6, 21, 22, 8, 47, 894736, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2034841,
+ 'httpcompression/response_count': 50,
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 130531328,
+ 'memusage/startup': 130531328,
+ 'response_received_count': 51,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 50,
+ 'scheduler/dequeued/memory': 50,
+ 'scheduler/enqueued': 50,
+ 'scheduler/enqueued/memory': 50,
+ 'start_time': datetime.datetime(2024, 6, 21, 22, 8, 45, 74157, tzinfo=datetime.timezone.utc)}
+2024-06-22 01:08:47 [scrapy.core.engine] INFO: Spider closed (finished)
